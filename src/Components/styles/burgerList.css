@@ -1,0 +1,43 @@
+h1 {
+    margin: 30px auto;
+    font-family: 'Alice', serif;
+    font-size: 54px;
+    text-align: center;
+}
+
+.burger-list {
+    width: 70%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 48% 48%;
+}
+
+.burger-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    transition: all 0.3s;
+}
+
+.burger-card:hover {
+    box-shadow: 3px 4px 7px -3px rgba(138, 138, 138, 1);
+}
+
+.burger-card img {
+    width: 80%;
+    margin-bottom: 20px;
+    transition: all 0.3s;
+}
+
+.burger-card span {
+    font-size: 24px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.burger-card:hover img,
+.burger-card:hover span {
+    transform: scale(1.2);
+}

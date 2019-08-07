@@ -1,0 +1,115 @@
+.personal-burger-change {
+    width: 80%;
+    margin: 30px auto;
+}
+
+.personal-burger-change h2 {
+    font-family: 'Alice', serif;
+    font-size: 40px;
+    margin: 0 0 15px;
+    text-align: center;
+}
+
+.personal-burger-name {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.personal-burger-menu {
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-items: center;
+}
+
+.personal-burger-menu ul{
+    margin: 10px 10px;
+}
+
+.personal-burger-menu li {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.personal-burger-plus,
+.personal-burger-minus {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    font-size: 30px;
+    line-height: 20px;
+    transition: all .2s;
+}
+
+.personal-burger-plus {
+    background-color: #178006;
+}
+
+.personal-burger-plus:disabled {
+    background-color: #4f8058;
+    color: #000;
+}
+
+.personal-burger-minus {
+    background-color: #802102;
+}
+
+.personal-burger-minus:disabled {
+    background-color: #804b39;
+    color: #000;
+}
+
+.personal-burger-minus:active,
+.personal-burger-plus:active {
+    transform: scale(1.1);
+}
+
+.personal-burger-value {
+    width: 33px;
+    display: inline-block;
+    text-align: center;
+    margin: 0 10px;
+    font-size: 28px;
+}
+
+.personal-burger-ing {
+    margin-left: 10px;
+    font-family: 'Alice', serif;
+    font-size: 28px;
+}
+
+.personal-burger-menu img {
+    width: 90%;
+    margin: 5px 10px;
+}
+
+.personal-burger-finish,
+.to-main-menu {
+    padding: 15px;
+    margin: 0 auto 50px;
+    display: block;
+    border: none;
+    border-radius: 3px;
+    outline: none;
+    background: #178006;
+    font-family: 'Alice', serif;
+    font-size: 24px;
+}
+
+.personal-burger-finish:hover {
+    animation: radial-pulse 1s infinite;
+}
+
+@keyframes radial-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        box-shadow: 0px 5px 40px 0px rgba(10, 235, 55, 0.8);
+    }
+}
