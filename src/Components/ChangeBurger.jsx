@@ -1,7 +1,6 @@
 import React from 'react';
 import Ingredient from "./Ingredient";
 import {Link} from "react-router-dom";
-import { Button } from 'semantic-ui-react';
 import './styles/changeBurger.css';
 
 function ChangeBurger(props) {
@@ -25,7 +24,7 @@ function ChangeBurger(props) {
         <img src={burger.image} alt={burger.name} />
       </div>
       <Link to={`/burgers/personal_burger`} >
-        <Button className="personal-burger-finish">Оформить заказ</Button>
+        <button className="personal-burger-finish">Оформить заказ</button>
       </Link>
     </section>
   );

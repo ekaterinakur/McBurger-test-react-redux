@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import Burger from './Burger';
 import './styles/burgerList.css';
-// import { Grid } from 'semantic-ui-react';
-// import 'semantic-ui-css/semantic.min.css';
 
 class BurgerList extends Component {
 

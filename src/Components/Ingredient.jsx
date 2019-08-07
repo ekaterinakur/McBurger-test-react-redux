@@ -1,5 +1,4 @@
 import React from 'react';
-// import '../styles/Ingredient.css';
 
 function Ingredient(props) {
   const { name, value, addIngredient, removeIngredient } = props;
