@@ -4,18 +4,14 @@ import './styles/burgerList.css';
 
 class BurgerList extends Component {
 
- componentDidMount() {
-    fetch('https://my-json-server.typicode.com/ekaterinakur/mc-json/burgers')
-      .then(resolve => resolve.json())
-      .then(burgers => {
-        this.props.getBurgerList(burgers);
-      })
+  componentDidMount() {
+    this.props.getBurgerList();
   }
 
   render() {
     return (
       <section>
-        <h1>Бургеры</h1>
+        <h1>BURGERS</h1>
         <div className="burger-list">
           {this.props.burgers.map(burger => {
             return (

@@ -51,7 +51,6 @@
 
 .personal-burger-plus:disabled {
     background-color: #4f8058;
-    color: #000;
 }
 
 .personal-burger-minus {
@@ -60,7 +59,6 @@
 
 .personal-burger-minus:disabled {
     background-color: #804b39;
-    color: #000;
 }
 
 .personal-burger-minus:active,

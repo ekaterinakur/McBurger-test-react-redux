@@ -7,10 +7,10 @@ function PersonalBurger(props) {
 
   return (
     <section className="personal-burger-ready">
-      <h2>Ваш персональный заказ оформлен!</h2>
+      <h2>Your personal order has been completed!</h2>
       <div className="personal-burger-name">{burger.name}</div>
       <div className="personal-burger-additives first">
-        Добавки:
+        Added:
         {ingredients.map((ing, idx) => {
           if ((burger.ingredients[ing.name] || 0) < ing.value) {
             return <div key={idx}>{ing.name} {ing.value - (burger.ingredients[ing.name] || 0)}</div>
@@ -18,7 +18,7 @@ function PersonalBurger(props) {
         })}
       </div>
       <div className="personal-burger-additives second">
-        Убрано:
+        Removed:
         {ingredients.map((ing, idx) => {
           if (burger.ingredients[ing.name] > ing.value) {
             return <div key={idx}>{ing.name} {burger.ingredients[ing.name] - ing.value}</div>
@@ -26,7 +26,7 @@ function PersonalBurger(props) {
         })}
       </div>
       <Link to={`/`} onClick={cleanOrder}>
-        <button className="to-main-menu">В ГЛАВНОЕ МЕНЮ</button>
+        <button className="to-main-menu">MAIN MENU</button>
       </Link>
     </section>
   );

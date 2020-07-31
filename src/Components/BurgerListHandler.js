@@ -11,7 +11,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    getBurgerList: (data) => dispatch(getBurgerList(data)),
+    getBurgerList: () => dispatch(getBurgerList()),
     chooseBurger: (id) => dispatch(chooseBurger(id)),
   }
 }

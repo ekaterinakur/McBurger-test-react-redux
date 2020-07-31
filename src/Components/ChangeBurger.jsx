@@ -8,7 +8,7 @@ function ChangeBurger(props) {
 
   return (
     <section className="personal-burger-change">
-      <h2>Ваш персональный бургер:</h2>
+      <h2>Your personal burger:</h2>
       <div className="personal-burger-name">{burger.name}</div>
       <div className="personal-burger-menu">
         <ul>
@@ -24,7 +24,7 @@ function ChangeBurger(props) {
         <img src={burger.image} alt={burger.name} />
       </div>
       <Link to={`/burgers/personal_burger`} >
-        <button className="personal-burger-finish">Оформить заказ</button>
+        <button className="personal-burger-finish">Place an order</button>
       </Link>
     </section>
   );

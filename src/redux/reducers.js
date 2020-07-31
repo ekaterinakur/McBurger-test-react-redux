@@ -5,14 +5,14 @@ const initialState = {
   selected: null,
   id: null,
   ingredients: [
-    {name: "Котлета", value: 0},
-    {name: "Лук", value: 0},
-    {name: "Помидор", value: 0},
-    {name: "Огурец", value: 0},
-    {name: "Соленый огурец", value: 0},
-    {name: "Листья салата", value: 0},
-    {name: "Сыр", value: 0},
-    {name: "Соус", value: 0}
+    {name: "Cutlet", value: 0},
+    {name: "Onion", value: 0},
+    {name: "Tomato", value: 0},
+    {name: "Cucumber", value: 0},
+    {name: "Pickle", value: 0},
+    {name: "Lettuce", value: 0},
+    {name: "Cheese", value: 0},
+    {name: "Sauce", value: 0}
   ]
 };
 

@@ -12,6 +12,10 @@ a {
     color: inherit;
 }
 
-button {
+button, button:disabled {
+    color: #fff;
+}
+
+button:not(:disabled) {
     cursor: pointer;
 }

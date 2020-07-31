@@ -4,10 +4,16 @@ export const ADD_INGREDIENT = 'add_ingredient';
 export const REMOVE_INGREDIENT = 'remove_ingredient';
 export const CLEAN_ORDER = 'clean_order';
 
-export function getBurgerList(data) {
-  return {
-    type: GET_BURGER_LIST,
-    payload: data
+export function getBurgerList() {
+  return function(dispatch) {
+    fetch('https://my-json-server.typicode.com/ekaterinakur/mc-json/burgers')
+      .then(resolve => resolve.json())
+      .then(burgers => {
+        dispatch({
+          type: GET_BURGER_LIST,
+          payload: burgers
+        })
+      })
   }
 }
 
